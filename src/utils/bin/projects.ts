@@ -1,13 +1,10 @@
-import { getProjects } from '../../api';
+import config from '../../../config.json';
 
 const projects = async (args: string[]): Promise<string> => {
-  const projects = await getProjects();
+  const projects = config.projects;
 
-  return projects
-    .filter((repo) => !repo.fork)
-    .map(
-      (repo) =>
-        `${repo.name} - <a class="text-light-blue dark:text-dark-blue underline" href="${repo.html_url}" target="_blank">${repo.html_url}</a>`,
+  return projects.map(
+      (project) => `<a class="underline" href="${project.url}" target="_blank">${project.name}</a> - ${project.description}`,
     )
     .join('\n');
 };

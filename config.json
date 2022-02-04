@@ -1,10 +1,26 @@
 {
-  "bioUrl": "https://raw.githubusercontent.com/m4tt72/m4tt72/master/README.md",
+  "about": "Hi! My name is Kostadin Plachkov. I'm a software engineer building high performance and availability systems, and focusing on impact and delivering innovative products. I specialize in cloud computing, distributed systems and information security. Currently, I'm working at SAP - BTP Core Platform Security Engineering.\n\nI'm also a cloud native and OSS ambassador, and contributor to Docker, Netflix, Signal, HAPCI and other projects and organizations. I believe in continued education and research, that's why I have also contributed to the advancements in education for the fields of computer science in accredited educational institutions.",
   "social": {
-    "instagram": "m4tt72",
-    "github": "m4tt72",
-    "linkedin": "yassinefathi"
+    "github": "kplachkov",
+    "linkedin": "kplachkov"
   },
+  "projects": [
+    {
+      "name": "dotfiles",
+      "description": "The Software Engineer's setup. Ubuntu dotfiles, scripts and configurations. Disclaimer: only for real hackermen.",
+      "url": "https://github.com/kplachkov/dotfiles"
+    },
+    {
+      "name": "FaceWallet",
+      "description": "Secure online platform, integrated in Facebook, for storing and transferring digital currency.",
+      "url": "https://m.me/FaceWallet"
+    },
+    {
+      "name": "TweetHub",
+      "description": "Multi-dimensional depiction of users on Twitter. Search for tweets by criteria and view user statistics.",
+      "url": "https://github.com/tweethub"
+    }
+  ],
   "colors": {
     "light": {
       "background": "#FBF1C9",

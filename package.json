@@ -1,22 +1,14 @@
 {
   "name": "terminal",
   "version": "2.8.1",
+  "private": true,
   "license": "MIT",
-  "author": {
-    "name": "Yassine Fathi",
-    "url": "https://m4tt72.com",
-    "email": "hi@m4tt72.com"
-  },
   "scripts": {
-    "start": "next start",
-    "build": "next build",
-    "dev": "next dev",
-    "next": "next",
-    "lint": "eslint .",
-    "prepare": "husky install"
+    "start": "serve out",
+    "build": "next build && next export",
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@datapunt/matomo-tracker-react": "^0.5.1",
     "axios": "^0.24.0",
     "next": "^12.1.0",
     "react": "^17.0.2",
@@ -35,8 +27,8 @@
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.0",
-    "husky": "^7.0.4",
     "postcss": "^8.4.4",
+    "serve": "^13.0.2",
     "prettier": "^2.5.1",
     "tailwindcss": "^3.0.0",
     "typescript": "^4.4.4"
