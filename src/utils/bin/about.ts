@@ -1,9 +1,7 @@
-import { getBio } from '../../api';
+import config from "../../../config.json";
 
 const about = async (args: string[]): Promise<string> => {
-  const bio = await getBio();
-
-  return bio;
+  return config.about;
 };
 
 export default about;

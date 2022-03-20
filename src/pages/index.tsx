@@ -1,4 +1,3 @@
-import { useMatomo } from '@datapunt/matomo-tracker-react';
 import { NextPageContext } from 'next';
 import Head from 'next/head';
 import React from 'react';
@@ -16,8 +15,6 @@ interface IndexPageProps {
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({ version, quote, inputRef }) => {
-  const { trackPageView } = useMatomo();
-
   const containerRef = React.useRef(null);
   const {
     history,
@@ -32,10 +29,6 @@ const IndexPage: React.FC<IndexPageProps> = ({ version, quote, inputRef }) => {
   const init = React.useCallback(() => setHistory(banner()), []);
 
   React.useEffect(() => {
-    trackPageView({});
-  }, []);
-
-  React.useEffect(() => {
     init();
   }, [init]);
 
@@ -48,7 +41,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ version, quote, inputRef }) => {
   return (
     <>
       <Head>
-        <title>M4TT72 | Home</title>
+        <title>Terminal · Kostadin Plachkov</title>
       </Head>
 
       <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
