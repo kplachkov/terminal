@@ -6,7 +6,7 @@ import { getQuote } from '../api';
 import { History } from '../components/history';
 import { Input } from '../components/input';
 import { useHistory } from '../hooks/history';
-import { banner } from '../utils/bin';
+import { Banner } from "../components/banner";
 
 interface IndexPageProps {
   version: string;
@@ -26,12 +26,6 @@ const IndexPage: React.FC<IndexPageProps> = ({ version, quote, inputRef }) => {
     setLastCommandIndex,
   } = useHistory([]);
 
-  const init = React.useCallback(() => setHistory(banner()), []);
-
-  React.useEffect(() => {
-    init();
-  }, [init]);
-
   React.useEffect(() => {
     if (inputRef.current) {
       inputRef.current.focus();
@@ -44,8 +38,10 @@ const IndexPage: React.FC<IndexPageProps> = ({ version, quote, inputRef }) => {
         <title>Terminal · Kostadin Plachkov</title>
       </Head>
 
-      <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
-        <div ref={containerRef} className="overflow-y-auto h-full">
+      <div className="py-6 pl-6 pr-3 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
+        <div ref={containerRef} className="overflow-y-auto h-full pr-2.5">
+          <Banner/>
+
           <History history={history} />
 
           <Input

@@ -38,3 +38,87 @@ div#__next > div {
 ::-webkit-scrollbar-thumb:hover {
   background: #d79921;
 }
+
+@media only screen and (max-width: 790px) {
+  #banner {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #banner {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #banner {
+    font-size: 0.45rem;
+  }
+
+  #ps1-host {
+    width: 2ch;
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  #ps1-cwd {
+    width: 3ch;
+    overflow: hidden;
+    display: inline-flex;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #banner {
+    font-size: 0.35rem;
+  }
+
+  #ps1-host {
+    width: 2ch;
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  #ps1-cwd {
+    width: 3ch;
+    overflow: hidden;
+    display: inline-flex;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #banner {
+    font-size: 0.25rem;
+  }
+
+  #ps1-host {
+    width: 2ch;
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  #ps1-cwd {
+    width: 3ch;
+    overflow: hidden;
+    display: inline-flex;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  #banner {
+    font-size: 0.15rem;
+  }
+
+  #ps1-host {
+    width: 2ch;
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  #ps1-cwd {
+    width: 3ch;
+    overflow: hidden;
+    display: inline-flex;
+  }
+}
