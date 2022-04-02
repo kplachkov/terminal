@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/global.css';
-import Head from 'next/head';
 
 const App = ({ Component, pageProps }) => {
   const inputRef = React.useRef<HTMLInputElement>(null);
@@ -11,14 +10,6 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <>
-      <Head>
-        <meta
-          name="viewport"
-          content="initial-scale=1.0, width=device-width"
-          key="viewport"
-        />
-      </Head>
-
       <div
         className="text-light-foreground dark:text-dark-foreground text-xs md:min-w-full md:text-base"
         onClick={onClickAnywhere}
