@@ -6,7 +6,7 @@ import Document, {
   DocumentContext,
 } from 'next/document';
 
-class MyDocument extends Document {
+class Terminal extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
 
@@ -19,6 +19,15 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+            key="viewport"
+          />
+          <meta name="theme-color" content="#282828" />
+          <meta name="description" content="Software engineer building high performance and
+		        availability systems, and focusing on impact and delivering innovative products." />
+
           <link
             rel="apple-touch-icon"
             sizes="48x48"
@@ -63,10 +72,14 @@ class MyDocument extends Document {
             href="/logo-icon-96.png"
           />
           <link rel="manifest" href="/manifest.json" />
-          <meta name="msapplication-config" content="/browserconfig.xml" />
-          <meta name="theme-color" content="#D79921" />
-          <meta name="description" content="Software engineer building high performance and
-		        availability systems, and focusing on impact and delivering innovative products." />
+
+          <title>Terminal · Kostadin Plachkov</title>
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `document.documentElement.classList.add('dark');`,
+            }}
+          />
         </Head>
 
         <body>
@@ -78,4 +91,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default Terminal;

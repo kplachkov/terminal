@@ -1,5 +1,4 @@
 import { NextPageContext } from 'next';
-import Head from 'next/head';
 import React from 'react';
 import packageJson from '../../package.json';
 import { getQuote } from '../api';
@@ -34,11 +33,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ version, quote, inputRef }) => {
 
   return (
     <>
-      <Head>
-        <title>Terminal · Kostadin Plachkov</title>
-      </Head>
-
-      <div className="py-6 pl-6 pr-3 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
+      <div className="py-6 pl-6 pr-3 overflow-hidden h-full border-2 rounded border-light-orange dark:border-dark-orange">
         <div ref={containerRef} className="overflow-y-auto h-full pr-2.5">
           <Banner/>
 

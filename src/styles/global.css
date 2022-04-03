@@ -22,21 +22,20 @@ div#__next > div {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #262626;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ebdbb2;
-  border-radius: 5px;
+  background: #A89984;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #d79921;
+  background: #EBDBB2;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #fe8019;
 }
 
 @media only screen and (max-width: 790px) {
@@ -56,14 +55,8 @@ div#__next > div {
     font-size: 0.45rem;
   }
 
-  #ps1-host {
-    width: 2ch;
-    overflow: hidden;
-    display: inline-flex;
-  }
-
-  #ps1-cwd {
-    width: 3ch;
+  #ps1-hostname {
+    width: 9ch;
     overflow: hidden;
     display: inline-flex;
   }
@@ -74,14 +67,8 @@ div#__next > div {
     font-size: 0.35rem;
   }
 
-  #ps1-host {
-    width: 2ch;
-    overflow: hidden;
-    display: inline-flex;
-  }
-
-  #ps1-cwd {
-    width: 3ch;
+  #ps1-hostname {
+    width: 9ch;
     overflow: hidden;
     display: inline-flex;
   }
@@ -92,14 +79,8 @@ div#__next > div {
     font-size: 0.25rem;
   }
 
-  #ps1-host {
-    width: 2ch;
-    overflow: hidden;
-    display: inline-flex;
-  }
-
-  #ps1-cwd {
-    width: 3ch;
+  #ps1-hostname {
+    width: 9ch;
     overflow: hidden;
     display: inline-flex;
   }
@@ -110,14 +91,8 @@ div#__next > div {
     font-size: 0.15rem;
   }
 
-  #ps1-host {
-    width: 2ch;
-    overflow: hidden;
-    display: inline-flex;
-  }
-
-  #ps1-cwd {
-    width: 3ch;
+  #ps1-hostname {
+    width: 9ch;
     overflow: hidden;
     display: inline-flex;
   }
