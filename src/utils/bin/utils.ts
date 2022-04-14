@@ -22,7 +22,9 @@ export const gui = async (args: string[]): Promise<string> => {
 };
 
 export const vim = async (args: string[]): Promise<string> => {
-  return `Why use vim? Try 'emacs'.`;
+  window.open('https://www.youtube.com/watch?v=9n1dtmzqnCU', '_blank');
+
+  return ``;
 };
 
 export const emacs = async (args?: string[]): Promise<string> => {
